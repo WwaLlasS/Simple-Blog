@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Simple Blog - Articulo de prueba</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html" id="logo">Simple Blog</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Post.html">Articulo de prueba</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section class="main">
+       <section class="articles">
+           <article class="articulos">
+               <hgroup>
+                   <h2>Titulo del articulo</h2>
+                   <h6>Miercoles 03 de Febrero del 2016</h6>
+               </hgroup>
+               <div id="autor">Escrito por: <span>Williams Rincón</span></div>
+               <img class="img-art" src="http://lorempixel.com/670/300/technics/1/" alt="">
+               <h3>Este es un Titulo</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laudantium quo quae corrupti et labore nam natus pariatur, quos, impedit minima beatae quis veritatis veniam. Eum amet aperiam excepturi, molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellendus ipsum iure totam ratione doloremque illo, obcaecati similique at nihil sint in optio ea animi facere adipisci quisquam. Facere, dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nam cupiditate similique laborum id quibusdam iusto, quia expedita et laudantium ducimus officiis atque recusandae obcaecati, officia quisquam fugiat praesentium minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis illum, rerum minus. Fuga velit vero, natus laudantium amet architecto asperiores laboriosam! Cupiditate quam obcaecati rem, odit, quibusdam consectetur reprehenderit. Esse! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse a expedita aut perspiciatis distinctio placeat ad commodi quas officia temporibus, nisi totam, aliquid maiores facere impedit cumque fugit reiciendis quo?</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat laboriosam pariatur minus quia aperiam corporis! Enim debitis nihil delectus iste beatae nesciunt ex hic veniam dolor possimus sunt, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero placeat reiciendis asperiores natus atque vero debitis minima illo! Ipsam rerum saepe quo at aliquam vitae, eius eum necessitatibus tenetur eaque.</p>
+               <img class="img-art" src="http://lorempixel.com/670/300/technics/4/" alt="">
+               <h3>Este es un Titutlo</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia, quisquam totam exercitationem dignissimos ratione deleniti non esse pariatur cumque. Repudiandae consequuntur nemo totam numquam mollitia perspiciatis quibusdam excepturi alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis sint perspiciatis officiis dolorum, maiores sit ipsa, odit temporibus molestiae eaque autem, ab? Nemo dolores, vero praesentium hic, ad reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sit eius dignissimos praesentium aliquid architecto amet est porro, accusamus magnam sunt natus vel doloremque laboriosam. A officiis dolores, amet provident!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur amet blanditiis, ea reiciendis voluptatibus dolore similique hic ex molestias nemo magnam omnis et reprehenderit quae vel, eveniet eius, quas fuga! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque expedita ab nihil ex voluptatibus deserunt, veritatis aut, architecto, neque reiciendis est. Cumque velit at molestias adipisci fuga repellat, illum praesentium.</p>
+           </article>
+       </section>
+       <aside>
+           <div class="widget">
+               <h3>Widget</h3>
+               <ul>
+                   <li><a href="#">Enlace 1</a></li>
+                   <li><a href="#">Enlace 2</a></li>
+                   <li><a href="#">Enlace 3</a></li>
+                   <li><a href="#">Enlace 4</a></li>
+               </ul>
+           </div>
+           <div class="widget">
+               <h3>Widget</h3>
+               <ul>
+                   <li><a href="#">Enlace 1</a></li>
+                   <li><a href="#">Enlace 2</a></li>
+                   <li><a href="#">Enlace 3</a></li>
+                   <li><a href="#">Enlace 4</a></li>
+               </ul>
+           </div>
+       </aside>
+       <form class="comentarios">
+           <label for="nombre">Nombre: </label>
+           <input id="nombre" type="text">
+           <label for="email">Correo Electronico: </label>
+           <input id="email" type="text">
+           <textarea name="comentario" id="" cols="50" rows="10"></textarea>
+           <input id="enviar" type="submit">
+       </form>
+   </section>
+   <footer>Williams Rincón &copy; 2016</footer>
+   <script type="text/javascript">
+        $(function(){
+  $("#slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "fade",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Simple Blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#" id="logo">Simple Blog</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Post.html">Articulo de prueba</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<!--  Slide ShOW   -->
+   
+    <div class="slideshow">
+       <div id="slides">
+           <div>
+               <h2>Titulo del articulo 1</h2>
+               <img src="http://lorempixel.com/1200/800/technics/1/" alt="">
+           </div>
+           <div>
+               <h2>Titulo del articulo 2</h2>
+               <img src="http://lorempixel.com/1200/800/technics/2/" alt="">
+           </div>
+           <div>
+               <h2>Titulo del articulo 3</h2>
+               <img src="http://lorempixel.com/1200/800/technics/3/" alt="">
+           </div>
+       </div>
+   </div>
+   
+   <section class="main">
+       <section class="articles">
+           <article class="articulos">
+               <hgroup>
+                   <h2>Titulo del articulo</h2>
+                   <h6>Miercoles 03 de Febrero del 2016</h6>
+               </hgroup>
+               <img src="http://lorempixel.com/670/300/technics/1/" alt="">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laudantium quo quae corrupti et labore nam natus pariatur, quos, impedit minima beatae quis veritatis veniam. Eum amet aperiam excepturi, molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellendus ipsum iure totam ratione doloremque illo, obcaecati similique at nihil sint in optio ea animi facere adipisci quisquam. Facere, dolore.</p>
+               <a href="Post.html">Ver mas...</a>
+           </article>
+           <article class="articulos">
+               <hgroup>
+                   <h2>Titulo del articulo</h2>
+                   <h6>Miercoles 03 de Febrero del 2016</h6>
+               </hgroup>
+               <img src="http://lorempixel.com/670/300/technics/2/" alt="">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laudantium quo quae corrupti et labore nam natus pariatur, quos, impedit minima beatae quis veritatis veniam. Eum amet aperiam excepturi, molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellendus ipsum iure totam ratione doloremque illo, obcaecati similique at nihil sint in optio ea animi facere adipisci quisquam. Facere, dolore.</p>
+               <a href="#">Ver mas...</a>
+           </article>
+           <article class="articulos">
+               <hgroup>
+                   <h2>Titulo del articulo</h2>
+                   <h6>Miercoles 03 de Febrero del 2016</h6>
+               </hgroup>
+               <img src="http://lorempixel.com/670/300/technics/3/" alt="">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laudantium quo quae corrupti et labore nam natus pariatur, quos, impedit minima beatae quis veritatis veniam. Eum amet aperiam excepturi, molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellendus ipsum iure totam ratione doloremque illo, obcaecati similique at nihil sint in optio ea animi facere adipisci quisquam. Facere, dolore.</p>
+               <a href="#">Ver mas...</a>
+           </article>
+       </section>
+       
+       <aside>
+           <div class="widget">
+               <h3>Widget</h3>
+               <ul>
+                   <li><a href="#">Enlace 1</a></li>
+                   <li><a href="#">Enlace 2</a></li>
+                   <li><a href="#">Enlace 3</a></li>
+                   <li><a href="#">Enlace 4</a></li>
+               </ul>
+           </div>
+           <div class="widget">
+               <h3>Widget</h3>
+               <ul>
+                   <li><a href="#">Enlace 1</a></li>
+                   <li><a href="#">Enlace 2</a></li>
+                   <li><a href="#">Enlace 3</a></li>
+                   <li><a href="#">Enlace 4</a></li>
+               </ul>
+           </div>
+       </aside>
+   </section>
+   
+   <footer>Williams Rincón &copy; 2016</footer>
+   <script type="text/javascript">
+        $(function(){
+  $("#slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "fade",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+    
+    </script>
+</body>
+</html>
