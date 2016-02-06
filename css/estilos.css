@@ -59,8 +59,6 @@ header nav ul li a{
 
 #slides{
     display: none;
-    width: 100%;
-    height: auto;
 }
 
 #slides img{
@@ -70,9 +68,10 @@ header nav ul li a{
 
 .slideshow {
     position: relative;
-    width: 100%;
+    width: 80%;
     z-index: 0;
     top: 60px;
+    margin: auto;
 }
 
 #slides div h2{
